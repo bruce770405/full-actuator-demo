@@ -1,17 +1,16 @@
 global:
-   resolve_timeout: 2h
+   resolve_timeout: 2m # 未收到標記告警通知，等待 timeout 時間之後事件標記為 resolve。
 
 route:
   group_by: ['alertname']
   group_wait: 5s
-  group_interval: 10s
+  group_interval: 10s # 重複發送告警的間隔時間
   repeat_interval: 1h
-  receiver: 'slack'
+  receiver: 'slack-receiver'
 
 receivers:
-  - name: 'slack'
-  slack_configs:
-    - api_url: "YOUR_SLACK_WEBHOOK_URL"
-      channel: "#alert-test"
-      text: "Alert!"
-      title: "{{.CommonAnnotations.summary}}"
+  - name: 'slack-receiver'
+    slack_configs:
+      - api_url: "YOUR_SLACK_WEBHOOK_URL"
+        channel: "#alert-test"
+        text: "<!channel> \n summary: {{ .CommonAnnotations.summary }}\n description: {{ .CommonAnnotations.description }}"
