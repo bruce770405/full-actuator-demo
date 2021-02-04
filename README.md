@@ -18,4 +18,8 @@ We use this components to build a simple production enviorment include program m
 * all feature in docker-compose
 
 
-...etc
+## Installation
+in package folder and key in command
+```
+docker-compose up -d
+```
