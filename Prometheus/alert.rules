@@ -35,12 +35,12 @@ groups:
 
 - name: services-handler
   rules:
-  - alert: too_many_request
+  - alert: TooManyRequestLoad
     expr: request_count_total > 100
     for: 10s
     labels:
       severity: warning
       team: node
     annotations:
-      summary: "request_count_total is too over!"
+      summary: "{{$labels.instance}}: request count total is too over!"
       description: "{{ $labels.instance }} of job {{ $labels.job }} has over 100 for more than 1 sec."
