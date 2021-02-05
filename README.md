@@ -29,3 +29,14 @@ We use this components to build a simple production enviorment include program m
 ```
 docker-compose up -d
 ```
+
+## Default Enviorment Information
+
+| Service name  | Port|
+| ------------- | ------------- |
+| the demo kotlin service app  | 8081  |
+| prometheus  | 9090  |
+| grafana  | 3000  |
+| alertmanager  | 9003  |
+| node-exporter  | 9100  |
+| cadvisor  | 8080  |
