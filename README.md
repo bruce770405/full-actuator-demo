@@ -46,3 +46,5 @@ docker-compose up -d
 ## More Introduction
   If you have more interesting for this , you can browse my share article 
   [Article on Medium](https://brucehsu-developer.medium.com/microservices-%E7%B3%BB%E7%B5%B1%E7%9B%A3%E6%8E%A7%E6%9C%80%E4%BD%B3%E5%A4%A5%E4%BC%B4%E9%9B%86%E6%88%90-884570f81ae5?sk=00abd3ab4f7efd692f49b4c42603ec60 "Title")
+  
+      Remarks： My articles are all in Chinese.
