@@ -1,4 +1,7 @@
 # full-actuator-demo
+
+![image](picture or gif url)
+
 We use this components to build a simple production enviorment include program monitoring ,process warning alert , containers and deploy node data monitoring.
 
 ## Side component: 
