@@ -1,6 +1,6 @@
 # full-actuator-demo
 
-![image](picture or gif url)
+![image](https://github.com/bruce770405/full-actuator-demo/blob/main/front.png)
 
 We use this components to build a simple production enviorment include program monitoring ,process warning alert , containers and deploy node data monitoring.
 
