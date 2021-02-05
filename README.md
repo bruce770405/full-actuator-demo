@@ -29,6 +29,7 @@ We use this components to build a simple production enviorment include program m
 ```
 docker-compose up -d
 ```
+  5. now you can use your internal network to see this demo
 
 ## Default Enviorment Information
 
