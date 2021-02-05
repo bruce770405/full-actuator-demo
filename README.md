@@ -22,10 +22,10 @@ We use this components to build a simple production enviorment include program m
 
 
 ## Installation
-    1. move to alertmanager folder , and open config.yml
-    2. edit slack_configs.api_url to your slack webhook url
-    3. back to project root
-    4. key in docker-compose command 
+  1. move to alertmanager folder , and open config.yml
+  2. edit slack_configs.api_url to your slack webhook url
+  3. back to project root
+  4. key in docker-compose command 
 ```
 docker-compose up -d
 ```
