@@ -58,8 +58,9 @@ services:
     networks:
       - back-tier
     restart: always
-    deploy:
-      mode: global
+    hostname: node-exporter
+    #deploy: #WARNING: Some services (cadvisor, node-exporter) use the 'deploy' key, which will be ignored. Compose does not support 'deploy' configuration - use `docker stack deploy` to deploy to a swarm.
+      #mode: global
 
   alertmanager:
     image: prom/alertmanager:v0.21.0
@@ -88,8 +89,9 @@ services:
     networks:
       - back-tier
     restart: always
-    deploy:
-      mode: global
+    hostname: cadvisor
+    #deploy: #WARNING: Some services (cadvisor, node-exporter) use the 'deploy' key, which will be ignored. Compose does not support 'deploy' configuration - use `docker stack deploy` to deploy to a swarm.
+      #mode: global
   
   grafana:
     image: grafana/grafana:7.3.7
