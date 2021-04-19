@@ -1,13 +1,8 @@
-#FROM openjdk:11.0.7-jre-slim
-#MAINTAINER bruce770405@gmail.com
-#EXPOSE 8081
-#ADD /build/libs/spring-app-0.0.1-SNAPSHOT.jar spring-app.jar
-#ENTRYPOINT ["java", "-jar", "spring-app.jar"]
 FROM gradle:6.8.1-jdk11 AS build
-ADD . /maven/src
-WORKDIR /maven/src
-RUN mvn verify clean
-RUN mvn package
+MAINTAINER BruceHsu bruce770405@gmail.com
+COPY --chown=gradle:gradle . /home/gradle/src
+WORKDIR /home/gradle/src
+RUN gradle build
 
 FROM openjdk:11.0.7-jre-slim
 RUN mkdir /app

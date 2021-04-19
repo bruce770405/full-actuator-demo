@@ -16,8 +16,7 @@ route:
 receivers:
   - name: 'slack-receiver'
     slack_configs:
-    # - api_url: "YOUR_SLACK_WEBHOOK_URL"
-      - api_url: "https://hooks.slack.com/services/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"
+      - api_url: "YOUR_SLACK_WEBHOOK_URL"
         channel: "#alert-test"
         text: "<!channel> \n summary: {{ .CommonAnnotations.summary }}\n description: {{ .CommonAnnotations.description }}"
     # email_configs:
